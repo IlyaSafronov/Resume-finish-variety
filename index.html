@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Резюме</title>
+</head>
+<body>
+  <body>
+    <nav id="dekstop-nav">
+      <div class="logo">Сафронов Илья</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#experience">Опыт работы</a></li>
+          <li><a href="#projects">Проекты</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <nav id="hamburger-nav">
+      <div class="logo">Сафронов Илья</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Обо мне</a></li>
+        <li><a href="#experience"onclick="toggleMenu()">Опыт работы</a></li>
+        <li><a href="#projects"onclick="toggleMenu()">Проекты</a></li>
+        <li><a href="#contact"onclick="toggleMenu()">Контакты</a></li>
+      </div>
+      </div>
+    </nav>
+  
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./CROPPED-DSC02232.png" alt="John Doe profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Привет, я</p>
+        <h1 class="title">Илья Сафронов</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./Резюме исправленное.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact Info</button>
+        </div> 
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon"  onclick="location.href='https://www.linkedin.com/in/safronov-ilya-06567512b?trk=feed_main-feed-card_feed-actor-image'">
+          <img src="./assets/github.png" alt="My GitHub profile" class="icon"  onclick="location.href='https://github.com/IlyaSafronov'">
+        </div>
+      </div>
+    </section>
+  
+    <section id="about">
+      <p class="section__text__p1">Более подробно</p>
+      <h1 class="title">Обо мне</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./IMG_0023.png" alt="Profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="ditails-container">
+              <img src="./assets/experience.png" alt="experience icon" class="icon">
+              <h3>Опыт работы</h3>
+              <p>2+ года <br> Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Eduction icon" class="icon">
+              <h3>Образование</h3>
+              <p>ФГАОУ ВО Первый МГМУ имени И.М. Сеченова, 2010</p>
+              <p>АНО ВО Университет Иннополис, 2022</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Работаю в качестве frontend-разработчика более двух лет. Имею опыт создания различной анимации с помощью CSS и JavaScript. Также в работе занимает большое место вёрстка различных лендингов.</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href ='./#experience'">
+    </section>
+  
+    <section id="experience">
+      <p class="section__text__p1">Перечень моих</p>
+      <h1 class="title">Навыков</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href ='./#projects'">
+    </section>
+  
+    <section id="projects">
+      <p class="section__text__p1">
+        Мои недавние
+      </p>
+      <h1 class="title">Проекты</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./photo55.jpg" alt="Project 1" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Проект один</h2>
+          <div class="btn-ontainer">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IlyaSafronov/SpaceX-Website-Clone.git'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://lighthearted-rugelach-b6f85f.netlify.app/'">Live Demo</button>
+  
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./photo36.jpg" alt="Project 2" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Проект два</h2>
+          <div class="btn-ontainer">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IlyaSafronov/Saas-landing-page'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://incredible-kringle-3c6a66.netlify.app/'">Live Demo</button>
+  
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./photo58.jpg" alt="Project 3" class="project-img">
+          </div>
+          <h2 class="experience-sub-title project-title">Проект три</h2>
+          <div class="btn-ontainer">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/IlyaSafronov/The-simple-Website'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://glittery-sorbet-2433be.netlify.app/'">Live Demo</button>
+  
+          </div>
+        </div>
+      </div>
+      </div>
+  
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href ='./#projects'">
+    </section>
+  
+    <section id="contact">
+      <p class="section__text__p1">Будем на связи!</p>
+      <h1 class="title">Мои контакты</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:ilyasafronov18@gmail.com">ilyasafronov18@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/safronov-ilya-06567512b?trk=feed_main-feed-card_feed-actor-image">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+  
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#experience">Опыт работы</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+        <p>Copyright &#169; 2024 Илья Сафронов. All Rights Reserved</p>
+    </footer>
+  
+    
+  
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
